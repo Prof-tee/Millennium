@@ -2,22 +2,23 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { assetPath } from "../lib/assetPath";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const products = [
-  { id: 1, name: "Classic 2 Piece Suit", category: "clothing - Millennium Studio", price: "N480,000", image: "/3rd pic.jpg" },
-  { id: 2, name: "Essential Brown Suit", category: "clothing - Millennium Studio", price: "N320,000", image: "/1st pic.jpg" },
-  { id: 3, name: "Modern Hoodie", category: "clothing - Millennium Studio", price: "N68,000", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80" },
-  { id: 4, name: "Street Sneakers", category: "footwear - Millennium Studio", price: "N95,000", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" },
-  { id: 5, name: "White Trainers", category: "footwear - Millennium Studio", price: "N110,000", image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" },
-  { id: 6, name: "Leather Boots", category: "footwear - Millennium Studio", price: "N100,000", image: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=800&q=80" },
-  { id: 7, name: "Everyday Watch", category: "accessories - Millennium Studio", price: "N125,000", image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80" },
-  { id: 8, name: "Classic Sunglasses", category: "accessories - Millennium Studio", price: "N25,000", image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80" },
-  { id: 9, name: "Exclusive Accessories", category: "accessories - Millennium Studio", price: "N60,000", image: "/7th pic.jpg" },
-  { id: 10, name: "Designer's Shoe", category: "Footwear - Millennium Studio", price: "N85,000", image: "/5th pic.jpg" },
-  { id: 11, name: "Quality Footwear", category: "Footwear - Millennium Studio", price: "N95,000", image: "/8th pic.jpg" },
-  { id: 12, name: "Exclusive Viena", category: "Footwear - Millennium Studio", price: "N90,000", image: "/9th pic.jpg" },
+  { id: 1, name: "Classic 2 Piece Suit", category: "clothing - Millennium Studio", price: "N480,000", image: assetPath("/3rd pic.jpg") },
+  { id: 2, name: "Essential Brown Suit", category: "clothing - Millennium Studio", price: "N320,000", image: assetPath("/1st pic.jpg") },
+  { id: 3, name: "Modern Hoodie", category: "clothing - Millennium Studio", price: "N68,000", image: assetPath("https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80") },
+  { id: 4, name: "Street Sneakers", category: "footwear - Millennium Studio", price: "N95,000", image: assetPath("https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80") },
+  { id: 5, name: "White Trainers", category: "footwear - Millennium Studio", price: "N110,000", image: assetPath("https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80") },
+  { id: 6, name: "Leather Boots", category: "footwear - Millennium Studio", price: "N100,000", image: assetPath("https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=800&q=80") },
+  { id: 7, name: "Everyday Watch", category: "accessories - Millennium Studio", price: "N125,000", image: assetPath("https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80") },
+  { id: 8, name: "Classic Sunglasses", category: "accessories - Millennium Studio", price: "N25,000", image: assetPath("https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80") },
+  { id: 9, name: "Exclusive Accessories", category: "accessories - Millennium Studio", price: "N60,000", image: assetPath("/7th pic.jpg") },
+  { id: 10, name: "Designer's Shoe", category: "Footwear - Millennium Studio", price: "N85,000", image: assetPath("/5th pic.jpg") },
+  { id: 11, name: "Quality Footwear", category: "Footwear - Millennium Studio", price: "N95,000", image: assetPath("/8th pic.jpg") },
+  { id: 12, name: "Exclusive Viena", category: "Footwear - Millennium Studio", price: "N90,000", image: assetPath("/9th pic.jpg") },
 ];
 
 export default function Page() {

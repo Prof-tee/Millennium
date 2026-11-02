@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { assetPath } from "../lib/assetPath";
 type Product = {
   image: string;
   name: string;
@@ -7,9 +7,9 @@ type Product = {
 };
 
 const products: Product[] = [
-  { image: "/2nd pic.jpg", name: "Tony Iunobi", title: "Founder & Creative Director" },
-  { image: "/15th.jpg", name: "Lucy Izunobi", title: "Head of Design" },
-  { image: "/14th pic.jpg", name: "Mario Izunobi", title: "Marketing Manager" },
+  { image: assetPath("/2nd pic.jpg"), name: "Tony Iunobi", title: "Founder & Creative Director" },
+  { image: assetPath("/15th.jpg"), name: "Lucy Izunobi", title: "Head of Design" },
+  { image: assetPath("/14th pic.jpg"), name: "Mario Izunobi", title: "Marketing Manager" },
 ];
 
 export default function Pics() {

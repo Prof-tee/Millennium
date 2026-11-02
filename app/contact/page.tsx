@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { assetPath } from "../lib/assetPath";
 import Navbar from "../components/Navbar";                                                                                                                                                                            
 import Footer from "../components/Footer";
 
@@ -18,7 +19,7 @@ export default function Page() {
        </div>
        <div className ="m-10 flex gap-5">
          <Image
-            src="/icons8-incoming-call-32.png"
+            src={assetPath("/icons8-incoming-call-32.png")}
             alt="Describe the picture"
             width={50}
             height={100}
@@ -31,7 +32,7 @@ export default function Page() {
        </div>
        <div className ="m-10 flex gap-5">
          <Image
-            src="/icons8-gmail-32.png"
+            src={assetPath("/icons8-gmail-32.png")}
             alt="Describe the picture"
             width={50}
             height={100}

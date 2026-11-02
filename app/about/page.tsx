@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";                                                                                                                                                                            
 import Footer from "../components/Footer";
+import { assetPath } from "../lib/assetPath";
 import Pics3 from "../components/Pics3";
 
 export default function Page() {
@@ -9,7 +10,7 @@ export default function Page() {
      <Navbar />
       <div className="relative left-1/2 m-auto w-screen -translate-x-1/2 overflow-hidden rounded-lg mb-10">
            <Image
-             src="/13th.png"
+             src={assetPath("/13th.png")}
              alt="Describe the picture"
              width={1600}
              height={900}
@@ -34,7 +35,7 @@ export default function Page() {
             <hr />
             <div className="relative left-1/2 m-auto w-screen -translate-x-1/2 overflow-hidden rounded-lg  container">
               <Image
-                src="/7th pic.jpg"
+                src={assetPath("/7th pic.jpg")}
                 alt="Accessories"
                 width={1600}
                 height={900}
@@ -108,7 +109,7 @@ export default function Page() {
                     </span>
                  </div>
          <hr />
-      <Footer />
+       <Footer />
    </main>
   );
 }
