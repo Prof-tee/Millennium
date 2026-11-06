@@ -6,7 +6,7 @@ export default function Order() {
          <p className="font-serif text-5xl font-bold">Order history</p>
       <p>Stored securely on this device</p>
     </div>
-    <div className="flex flex-col gap-4 border border-dotted border-blue-600 items-center p-25">
+    <div className="flex flex-col gap-4 border border-dotted border-blue-600 items-center p-25 text-center ">
         <h1 className="font-bold text-4xl font-serif">Your wardrobe starts here.</h1>
         <p>Completed orders will be saved in this space.</p>
     <button className="bg-teal-600 py-5 px-7 font-bold">EXPLORE  THE  COLLECTION</button>

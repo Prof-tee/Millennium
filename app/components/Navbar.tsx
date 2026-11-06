@@ -50,28 +50,28 @@ function Navbar() {
       {menuOpen && (
         <div className="border-t border-blue-400 px-6 pb-4 md:hidden">
           <a
-            href="#"
+            href="/"
             className="block py-3 hover:text-blue-200"
           >
             Home
           </a>
 
           <a
-            href="#"
+            href="/about"
             className="block py-3 hover:text-blue-200"
           >
             About
           </a>
 
           <a
-            href="#"
+            href="/products"
             className="block py-3 hover:text-blue-200"
           >
-            Services
+            Products
           </a>
 
           <a
-            href="#"
+            href="/contact"
             className="block py-3 hover:text-blue-200"
           >
             Contact
