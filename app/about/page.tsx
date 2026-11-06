@@ -3,14 +3,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { assetPath } from "../lib/assetPath";
 import Pics3 from "../components/Pics3";
-<img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/pic.png`} alt="pic" />
 export default function Page() {
   return (
     <main>
      <Navbar />
       <div className="relative left-1/2 m-auto w-screen -translate-x-1/2 overflow-hidden rounded-lg mb-10">
            <Image
-             src={assetPath("/13th.png")}
+             src={assetPath("/13th-pic.png")}
              alt="Describe the picture"
              width={1600}
              height={900}
@@ -35,7 +34,7 @@ export default function Page() {
             <hr />
             <div className="relative left-1/2 m-auto w-screen -translate-x-1/2 overflow-hidden rounded-lg  container">
               <Image
-                src={assetPath("/7th pic.jpg")}
+                src={assetPath("/7th-pic.jpg")}
                 alt="Accessories"
                 width={1600}
                 height={900}

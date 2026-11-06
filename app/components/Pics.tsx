@@ -7,11 +7,11 @@ type Product = {
 };
 
 const products: Product[] = [
-  { image: assetPath("/1st pic.jpg"), title: "Classic Tailored Suit", price: "N150,000" },
-  { image: assetPath("/2nd pic.jpg"), title: "Everyday Essential", price: "N100,000" },
-  { image: assetPath("/11th pic.jpg"), title: "Modern Streetwear", price: "N120,000" },
-  { image: assetPath("/6th pic.jpg"), title: "Quality Accessories", price: "N20,000" },
-  { image: assetPath("/10th pic.jpg"), title: "Designer's Watch", price: "N50,000" },
+  { image: assetPath("/1st-pic.jpg"), title: "Classic Tailored Suit", price: "N150,000" },
+  { image: assetPath("/2nd-pic.jpg"), title: "Everyday Essential", price: "N100,000" },
+  { image: assetPath("/11th-pic.jpg"), title: "Modern Streetwear", price: "N120,000" },
+  { image: assetPath("/6th-pic.jpg"), title: "Quality Accessories", price: "N20,000" },
+  { image: assetPath("/10th-pic.jpg"), title: "Designer's Watch", price: "N50,000" },
 ];
 
 export default function Pics() {

@@ -7,9 +7,9 @@ type Product = {
 };
 
 const products: Product[] = [
-  { image: assetPath("/2nd pic.jpg"), name: "Tony Iunobi", title: "Founder & Creative Director" },
-  { image: assetPath("/15th.jpg"), name: "Lucy Izunobi", title: "Head of Design" },
-  { image: assetPath("/14th pic.jpg"), name: "Mario Izunobi", title: "Marketing Manager" },
+  { image: assetPath("/2nd-pic.jpg"), name: "Tony Iunobi", title: "Founder & Creative Director" },
+  { image: assetPath("/15th-pic.jpg"), name: "Lucy Izunobi", title: "Head of Design" },
+  { image: assetPath("/14th-pic.jpg"), name: "Mario Izunobi", title: "Marketing Manager" },
 ];
 
 export default function Pics() {
