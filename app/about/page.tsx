@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { assetPath } from "../lib/assetPath";
 import Pics3 from "../components/Pics3";
-
+<img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/pic.png`} alt="pic" />
 export default function Page() {
   return (
     <main>
