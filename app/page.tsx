@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Pics from "./components/Pics";
 import Pic2 from "./components/Pic2";
+import { assetPath } from "./lib/assetPath";
 import Footer from "./components/Footer";
 export default function page() {
   return (
@@ -25,7 +26,7 @@ export default function page() {
          </div>
          <div className="relative left-1/2 my-12 h-[min(170vw,700px)] w-screen -translate-x-1/2">
           <Image
-            src="/merged.jpg"
+            src={assetPath("/merged.jpg")}
             alt="A collage of menswear, shoes, and accessories"
             fill
             sizes="150vw"
@@ -49,7 +50,7 @@ export default function page() {
          </div>
          <div className="relative left-1/2 m-auto w-screen -translate-x-1/2 overflow-hidden rounded-lg">
            <Image
-             src="/13th-pic.png"
+             src={assetPath("/13th-pic.png")}
              alt="Describe the picture"
              width={1600}
              height={900}
